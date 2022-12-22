@@ -9,5 +9,8 @@ A function `def pascal_triangle(n):` that returns a list of lists of integers re
 <li>You can assume n will be always an integer</li>
 </ul>
 
+<br />
+<br />
+<br />
 
 <p>&copy; alx-interview</p>
