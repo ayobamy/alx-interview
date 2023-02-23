@@ -11,15 +11,14 @@ def makeChange(coins, total):
     return fewest number of `coins`
     needed to meet `total`
     """
-    if (total == 0 or total < 0):
+    if (total <= 0):
         return 0
 
-    f_coins = []
-    for i in range(total + 1):
-        f_coins.append(float('inf'))
+    f_coins = [float('inf')] * (total + 1)
     f_coins[0] = 0
-
-    # print(f_coins)
+    # for i in range(total + 1):
+    #     f_coins.append(float('inf'))
+    # f_coins[0] = 0
 
     for coin in coins:
         for i in range(coin, total + 1):
